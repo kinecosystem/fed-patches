@@ -20,5 +20,5 @@ cat <<EOF >> /etc/telegraf/telegraf.conf
 EOF
 service telegraf restart
 
-echo "facter -j --show-legacy > /tmp/facter/facterj" > etc/cron.daily/facter-update
+echo "facter -j --show-legacy > /tmp/facter/facterj" > /etc/cron.daily/facter-update
 chmod +x /etc/cron.daily/facter-update
